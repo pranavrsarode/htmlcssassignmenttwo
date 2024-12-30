@@ -9,11 +9,67 @@
 <body>
     <div class="main-content">
         <div class="inner-content">
-            <label> <b> Registration </b></label><br><br>
+            <div class="header"><b>Registration</b>
+                <hr style="width:25px;margin-left:0;color:(171deg, rgba(114,182,227,1) 0%, rgba(144,109,189,1) 100%)"> 
+            </div>
 
-            <label> Full Name </label><br>
-            <input type="text" placeholder="Enter Your Name">
+            <div class="form-row">
+                <div class="form-element-text">
+                    <div class="form-label"><label for="fullname"> Full name </label></div>
+                    <div class="form-input-div"><input type="text" placeholder="Enter your name" class="input-text form-input" id="fullname"> </div>
+                </div>
+                <div class="form-element-text">
+                    <div class="form-label"><label for="username">  Username </label></div>
+                    <div class="form-input-div"><input type="text" placeholder="Enter your username" class="input-text form-input" id="username"> </div>
+                </div>
+            </div>        
+
+                
+                
+            <div class="form-row">
+                <div class="form-element-text">
+                    <div class="form-label"><label for="email"> Email </label></div>
+                    <div class="form-input-div"><input type="text" placeholder="Enter your email" class="input-text form-input" id="email"> </div>
+                </div>
+                <div class="form-element-text">
+                    <div class="form-label"><label for="phonenumber"> Phone number </label></div>
+                    <div class="form-input-div"><input type="tel" maxlength="10" placeholder="Enter your number" class="input-text form-input" id="phonenumber"> </div>
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="form-element-text">
+                    <div class="form-label"><label for="password"> Password </label></div>
+                    <div class="form-input-div"><input type="password" placeholder="Enter your password" class="input-text form-input" id="password"> </div>
+                </div>
+                <div class="form-element-text">
+                    <div class="form-label"><label for="ConfirmPassword"> Confirm Password </label></div>
+                    <div class="form-input-div">
+                        <input type="password" placeholder="Confirm your password" class="input-text form-input" id="ConfirmPassword" /> 
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-label"><label for="Gender"> Gender </label></div>
+                <div class="form-element-radio">
+                    <input type="radio" id="male" name="Gender" value="male">
+                    <label for="male"> Male </label>
+               </div>
+               <div class="form-element-radio">
+                    <input type="radio" id="female" name="Gender" value="female">
+                    <label for="female"> Female </label>
+                </div>
+                <div class="form-element-radio">
+                    <input type="radio" id="not" name="Gender" value="not">
+                    <label for="not"> Prefer not to say </label>
+                </div>
+            </div>
+             <div class="form-row"> 
+                <button class="button-register">Register</button>
+             </div>
         </div>
-    </div>
+    </div>    
+            
 </body>
 </html>
